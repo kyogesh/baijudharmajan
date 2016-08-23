@@ -1,18 +1,28 @@
 {% load static %}
+{% load embed_video_tags %}
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Baiju Dharmajan</title>
 </head>
-<body bgcolor="#131720">
-<div align="center">
-<img src="{% static 'logo.png' %}" style="width:35%" />
+<body bgcolor="black">
+    <div align="center">
+        <img src="{% static 'logo.png' %}" style="width:35%" />
+            <br/>
+        <font face="helvetica" style="color: #989898;text-align:center">The website is under construction but in the meantime enjoy my latest music video.</font>
+    </div>
     <br/>
-<font face="helvetica" style="color: #677695;text-align:center" size="+2">Website under construction.</font>
-</div>
-<br/>
-<br/>
-<img src="{% static 'baiju.jpg' %}" style="margin-left: 12%" />
-<br>
+    <br/>
+    <!--<img src="{% static 'baiju.jpg' %}" style="margin-left: 12%" />-->
+    <div align="center">
+        {% for link in links %}
+            {% video link.video as my_video %}
+              {% video my_video '640x360' %}
+            {% endvideo %}
+        {% endfor %}
+        <br/>
+    </div>
+    <br>
 </body>
 </html>

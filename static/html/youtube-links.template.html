@@ -1,0 +1,15 @@
+<div align="center">
+    <img src="/static/images/logo.png" />
+        <br/>
+    <font face="helvetica" style="color: #989898;text-align:center">The website is under construction but in the meantime enjoy my latest music video.</font>
+</div>
+<br/>
+<br/>
+<div align="center" style="padding-top: 10px">
+    <div ng-repeat="link in $ctrl.links">
+        {{ video link.video as my_video }}
+          {% video my_video '640x360' %}
+        {% endvideo %}
+    </div>
+    <br/>
+</div>

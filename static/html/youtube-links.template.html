@@ -6,10 +6,15 @@
 <br/>
 <br/>
 <div align="center" style="padding-top: 10px">
-    <div ng-repeat="link in $ctrl.links">
-        {{ video link.video as my_video }}
-          {% video my_video '640x360' %}
-        {% endvideo %}
+    <div ng-repeat="link in $ctrl.links_hc"  style="padding:20px">
+        <div>
+            <ng-youtube-embed
+                url="link.video"
+                autoplay="true"
+                color="black">
+            </ng-youtube-embed>
+            <!--<p>Display output for control reasons: {{link.video}}</p>-->
+        </div>
     </div>
     <br/>
 </div>

@@ -1,4 +1,4 @@
 (function () {
     "use strict";
-    var fixedTop = angular.module('youtubeLinks', []);
+    var fixedTop = angular.module('youtubeLinks', ['ngYoutubeEmbed', ]);
 }());

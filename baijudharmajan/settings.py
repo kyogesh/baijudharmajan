@@ -25,7 +25,7 @@ SECRET_KEY = '3ya6l$i!4%5$-vza-#ouj^#k&0nxgu*bxj6^)o-14)p4(c#up6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.baiju-dharmajan.com', 'baiju-dharmajan.com', '139.59.15.173', '*']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'web',
-    'embed_video',
     'rest_framework',
 ]
 
@@ -57,7 +56,7 @@ ROOT_URLCONF = 'baijudharmajan.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -107,6 +106,14 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#         'rest_framework.authentication.BasicAuthentication',
+#         'rest_framework.authentication.SessionAuthentication',
+#     )
+# }
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
@@ -119,6 +126,12 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+EMAIL_HOST = 'smtp.mailgun.org'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'postmaster@sandbox5aac2f304d7e40f7abec0a30f82beb48.mailgun.org'
+EMAIL_HOST_PASSWORD = 'b44ceb19a56a504b22f473dddc787657'
+EMAIL_USE_SSL = True
 
 
 # Static files (CSS, JavaScript, Images)

@@ -44,7 +44,7 @@
             }
         });
 
-        $('.floating-form').blur(function(){
+        $('.floating-form').focusout(function(){
             if (_floatbox.hasClass('visiable')){
                 _floatbox.animate({"right":"-322px"}, {duration: 300}).removeClass('visiable');
             }

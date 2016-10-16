@@ -1,0 +1,61 @@
+<!-- contact form start -->
+<div class="floating-form" id="contact_form">
+<div class="contact-opener">Enquiry </div>
+    <div id="contact_results"></div>
+    <div id="contact_body">
+        <label><span>Name &nbsp;<span class="required">*</span></span>
+            <input type="text" name="name" id="name" required="true" ng-model="$ctrl.name" class="form-control">
+        </label>
+        <label><span>Email &nbsp;<span class="required">*</span></span>
+            <input type="email" name="email" required="true" ng-model="$ctrl.email" class="form-control">
+        </label>
+        <label><span>Phone &nbsp;</span>
+            <input name="phone" maxlength="15" ng-model="$ctrl.phone" required="true" class="tel-number-field form-control">
+        </label>
+        <label for="subject" ><span>Regarding</span>
+            <select class="custom-select custom-select-sm" ng-model="$ctrl.regarding" ng-options="name for name in ['Events', 'Promotion', 'Endorsement', 'Collaboration']" ng-change="$ctrl.setRegarding()">
+            </select>
+        </label>
+        <label><span>Message &nbsp; <span class="required">*</span></span>
+            <textarea name="message" id="message" class="textarea-field form-control" ng-model="$ctrl.message" required="true"></textarea>
+        </label>
+        <label>
+            <span>&nbsp;</span><input type="submit" id="submit_btn" ng-click="$ctrl.send()" class="btn btn-block btn-custom form-control">
+        </label>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        var _scroll = true, _timer = false, _floatbox = $("#contact_form"), _floatbox_opener = $(".contact-opener") ;
+        _floatbox.css("right", "-322px"); //initial contact form position
+
+        //Contact form Opener button
+        _floatbox_opener.click(function(){
+            if (_floatbox.hasClass('visiable')){
+                _floatbox.animate({"right":"-322px"}, {duration: 300}).removeClass('visiable');
+            }else{
+               _floatbox.animate({"right":"0px"},  {duration: 300}).addClass('visiable');
+            }
+        });
+
+        $('#contact_body').blur(function(){
+            if (_floatbox.hasClass('visiable')){
+                _floatbox.animate({"right":"-322px"}, {duration: 300}).removeClass('visiable');
+            }
+        });
+
+
+        //Effect on Scroll
+        $(window).scroll(function(){
+            if(_scroll){
+                _floatbox.animate({"top": "50px"},{duration: 300});
+                _scroll = false;
+            }
+            if(_timer !== false){ clearTimeout(_timer); }
+                _timer = setTimeout(function(){_scroll = true;
+                _floatbox.animate({"top": "50px"},{easing: "linear"}, {duration: 500});}, 400);
+        });
+
+    });
+</script>
+<!-- contact form end -->

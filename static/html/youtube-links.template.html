@@ -1,0 +1,20 @@
+<div align="center">
+    <img src="/static/images/logo.png" />
+        <br/>
+    <font face="helvetica" style="color: #989898;text-align:center">The website is under construction but in the meantime enjoy my latest music video.</font>
+</div>
+<br/>
+<br/>
+<div align="center" style="padding-top: 10px">
+    <div ng-repeat="link in $ctrl.links_hc"  style="padding:20px">
+        <div>
+            <ng-youtube-embed
+                url="link.video"
+                autoplay="true"
+                color="black">
+            </ng-youtube-embed>
+            <!--<p>Display output for control reasons: {{link.video}}</p>-->
+        </div>
+    </div>
+    <br/>
+</div>

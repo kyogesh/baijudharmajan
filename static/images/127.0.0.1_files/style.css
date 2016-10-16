@@ -1,19 +1,10 @@
 body{
 	font-family: Lato;
     background: #000000;
-    padding-bottom: 0px;
 }
-
-img {
+img{
     max-width: 100%;
 }
-
-img.home-image {
-    display: inline;
-    max-width: 60%;
-    padding-top: 25px;
-}
-
 a {
     color: #ffffff;
 }
@@ -37,11 +28,24 @@ hr{
     background: #000000;
 }
 
-img.logo-default {
+.site-logo {
+    position: absolute;
+    display: block;
     width: 130px;
+    text-decoration: none;
     top: 50%;
+    padding-right: 25px;
+    margin-left: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
-
 .navbar-nav{
     margin-left: 200px;
 }
@@ -142,7 +146,6 @@ a.accordion-toggle{color: #FFF;}
     max-width: 300px;
     padding: 30px 30px 10px 30px;
     border: 1px solid #ddd;
-    display: inline;
     right: 10px;
     background-color: #000000;
     opacity: .95;
@@ -151,14 +154,13 @@ a.accordion-toggle{color: #FFF;}
 .contact-opener { /*opener button*/
     text-align: center;
     width: 80px;
-    display: inline;
     position: absolute;
     left: -80px;
     transform: rotate(-90deg); /* rotate button -90deg */
     top: 100px;
     padding: 4px;
     color: #ffffff;
-    background-color: #404040;
+    background-color: blue;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
     cursor: pointer;
     border-radius: 7px 7px 0px 0px;
@@ -168,46 +170,3 @@ label {
     font-weight: normal;
 }
 
-
-footer {
-    font-size: 12px;
-    padding: 8px;
-    margin-top: 70px;
-    background-color: #191919;
-}
-
-footer label {
-    color: #404040;
-    margin: 0px;
-    padding-top: 5px;
-}
-
-img.social-icon.icon-fb:hover {
-    background-image: url('/static/images/fb-icon.png');
-    padding: 0px;
-    padding-left: 0px;
-}
-img.social-icon.icon-twitter:hover {
-    background-image: url('/static/images/twitter-icon.png');
-    padding-left: 0px;
-}
-img.social-icon.icon-youtube:hover {
-    background-image: url('/static/images/yt-icon.png');
-    padding-left: 0px;
-}
-img.social-icon.icon-soundcloud:hover {
-    background-image: url('/static/images/soundcloud-icon.png');
-    padding-left: 0px;
-}
-
-hr {
-    border-color: #272727;
-}
-
-.yt-videos {
-    padding: 10px;
-}
-
-label.latest-videos {
-    padding-bottom: 10px;
-}

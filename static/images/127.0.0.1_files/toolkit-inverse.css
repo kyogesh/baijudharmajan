@@ -1059,7 +1059,7 @@ output {
   font-size: 14px;
   line-height: 1.5;
   color: #ffffff;
-  background-color: #aaa;
+  background-color: #434857;
   background-image: none;
   border: 1px solid #434857;
   border-radius: 4px;
@@ -3349,6 +3349,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: block !important;
     height: auto !important;
     padding-bottom: 0;
+    width: 880px;
   }
   .navbar-collapse.in {
     overflow-y: visible;
@@ -3375,7 +3376,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
-  margin-left: -65px;
+  margin-left: -15px;
 }
 @media (min-width: 880px) {
   .container > .navbar-header,
@@ -3383,7 +3384,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .container > .navbar-collapse,
   .container-fluid > .navbar-collapse {
     margin-right: 0;
-    margin-left: -65px;
+    margin-left: 0;
   }
 }
 .navbar-static-top {
@@ -8963,7 +8964,7 @@ canvas {
   color: #cfd2da;
   vertical-align: middle;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right 12px center;
-  background-color: #aaa;
+  background-color: #434857;
   background-clip: padding-box;
   background-size: 8px 10px;
   border: 1px solid rgba(0, 0, 0, 0.15);

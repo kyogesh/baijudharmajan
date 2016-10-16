@@ -2,8 +2,9 @@
 <!DOCTYPE html>
 <html ng-app="baijuD" ng-strict-di>
   <head>
+    <title>Baiju Dharmajan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="{% static 'css/toolkit-inverse.css' %}" rel="stylesheet">
     <link href="{% static 'css/application.css' %}" rel="stylesheet">
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
@@ -19,14 +20,17 @@
     </style>
   </head>
   <body>
-    <fixed-top></fixed-top>
+    <div class="nav-bar-center" align="center">
+      <fixed-top></fixed-top>
+    </div>
 
-    <div class="container">
+    <div class="container" align="center">
       <div class="row">
           <div ng-view class="content"></div>
       </div><!--/row-->
     </div><!--/.fluid-container-->
     <contact-form></contact-form>
+    <footer></footer>
     <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
     <script type="text/javascript" src="{% static 'js/common/jquery-3.1.0.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/common/bootstrap.min.js' %}"></script>
@@ -41,8 +45,11 @@
     <script type="text/javascript" src="{% static 'js/fixed-top/fixed-top.component.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/youtube-links/youtube-links.module.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/youtube-links/youtube-links.component.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/youtube-links/youtube-links-inline.component.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/contact-form/contact-form.module.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/contact-form/contact-form.component.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/footer/footer.module.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/footer/footer.component.js' %}"></script>
     <script type="text/javascript">
     </script>
   </body>

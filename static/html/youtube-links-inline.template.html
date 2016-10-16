@@ -1,0 +1,8 @@
+<label align="center" class="latest-videos">Latest Music Videos</label>
+<div class="row" align="center">
+    <div class="col-md-4" ng-repeat="link in $ctrl.links" align="center">
+        <ng-youtube-embed url="link.video" autoplay="false" color="black" width="370" height="207" class="yt-videos">
+        </ng-youtube-embed>
+        <!--<p>Display output for control reasons: {{link.video}}</p>-->
+    </div>
+</div>

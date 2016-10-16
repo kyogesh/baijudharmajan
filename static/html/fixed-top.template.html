@@ -1,30 +1,29 @@
-
 <nav class="navbar navbar-default navbar-fixed-top navbar-inner">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button>
-      <a class="site-logo" href="#">
-        <img ng-src="/static/images/logo.png" alt="Baiju" class="logo-default">
-      </a>
+        </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="site-logo" href="#">
+                    <img ng-src="/static/images/logo.png" alt="Baiju" class="logo-default">
+                    </a>
+                </li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">MUSIC</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">GIG CALENDAR</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
     </div>
-    <div id="navbar" class="navbar-collapse collapse">          
-          <ul class="nav navbar-nav">
-            <li><a href="#!/videos">Videos</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <div class="form-inline navbar-text navbar-right">
-            <div class="input-with-icon" ng-show="$ctrl.user.loggedIn">
-              Logged in as <a href="#" class="navbar-link">{{$ctrl.user.loggedUsername}}</a>
-              <button class="btn btn-xs btn-pill btn-custom" type="button" ng-click="$ctrl.logout()">Logout</button>
-            </div>
-          </div>
-        </div><!--/.nav-collapse -->
     </div>
-  </div>
 </nav>

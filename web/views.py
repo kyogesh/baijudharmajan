@@ -11,7 +11,7 @@ class GetLinks(APIView):
     """
     Get links of a given type
     """
-    def post(self, request):
+    def get(self, request):
         link_type = request.data.get('link_type', 'youtube')
         links = Link.objects.filter(link_type=link_type)
         links = links.values()

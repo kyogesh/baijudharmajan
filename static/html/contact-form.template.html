@@ -38,17 +38,12 @@
             }
         });
 
-        $('#contact_body').focusout(function(){
+        $('#contact_body').blur(function(){
             if (_floatbox.hasClass('visiable')){
                 _floatbox.animate({"right":"-322px"}, {duration: 300}).removeClass('visiable');
             }
         });
 
-        $('.floating-form').focusout(function(){
-            if (_floatbox.hasClass('visiable')){
-                _floatbox.animate({"right":"-322px"}, {duration: 300}).removeClass('visiable');
-            }
-        });
 
         //Effect on Scroll
         $(window).scroll(function(){

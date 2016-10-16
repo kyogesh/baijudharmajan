@@ -1,4 +1,4 @@
 (function () {
     "use strict";
-    angular.module('contactForm', []);
+    angular.module('footer', []);
 }());

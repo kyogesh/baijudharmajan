@@ -141,10 +141,10 @@ a.accordion-toggle{color: #FFF;}
 .floating-form { /*contact form wrapper*/
     max-width: 300px;
     padding: 30px 30px 10px 30px;
-    border: 1px solid #ddd;
+    border: 1px solid #3e3c3c;
     display: inline;
-    right: 10px;
-    background-color: #000000;
+    left: 10px;
+    background-color: #2f2f2f;
     opacity: .95;
     position: fixed; /*Form position fixed*/
     }
@@ -153,8 +153,8 @@ a.accordion-toggle{color: #FFF;}
     width: 80px;
     display: inline;
     position: absolute;
-    left: -80px;
-    transform: rotate(-90deg); /* rotate button -90deg */
+    right: -56px;
+    transform: rotate(-270deg); /* rotate button -90deg */
     top: 100px;
     padding: 4px;
     color: #ffffff;

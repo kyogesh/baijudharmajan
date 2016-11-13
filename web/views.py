@@ -4,7 +4,7 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from .models import Link
+from .models import Link, ContactFormDetail
 
 
 class GetLinks(APIView):
@@ -29,13 +29,15 @@ class ContactView(APIView):
         phone = request.data['phone']
         name = request.data['name']
         body = body + '\n--' + name + '\n' + phone
-        recepient = ['baijudharmajan1@gmail.com', 'arvindchakrapal@gmail.com', ]
+        recipient = ['baijudharmajan1@gmail.com', 'arvindchakrapal@gmail.com', ]
+        ContactFormDetail.objects.create(**request.data)
         try:
-            send_mail(subject=subject, message=body, from_email=sender, recipient_list=recepient)
+            send_mail(subject=subject, message=body, from_email=sender,
+                      recipient_list=recipient)
         except Exception as e:
             data = {'code': 500, 'message': e.message}
             return Response(data, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-        return Response()
+        return Response({'success': True})
 
 
 def index(request):

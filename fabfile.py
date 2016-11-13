@@ -21,6 +21,7 @@ def pull():
 
 def install_requirements():
     print(red("\nInstalling requirements"))
+    run('pip install --upgrade pip')
     run('pip install -r requirements.txt')
     print(green("Installed requirements"))
 

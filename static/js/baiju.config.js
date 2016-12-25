@@ -14,7 +14,7 @@
                 template: '<youtube-links></youtube-links>'
             }).
             when('/about', {
-                templateUrl: 'static/html/about.template.html'
+                template: '<about></about>'
             }).
             otherwise('/home');
         }
@@ -22,7 +22,7 @@
     run(['$rootScope', '$window', '$http', function ($rootScope, $window, $http) {
         $rootScope.$on('$routeChangeStart', function (event) {
             // Create a list of routes which should be accessible without login
-            $window.location.href = "/#!/home";
+            // $window.location.href = "/#!/home";
         });
     }]);
 }());

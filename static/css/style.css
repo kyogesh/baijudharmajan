@@ -211,3 +211,41 @@ hr {
 label.latest-videos {
     padding-bottom: 10px;
 }
+
+.about-cover {
+    display: block;
+    max-width: 80%;
+    height: 35%;
+    margin-bottom: 15px;
+}
+
+.row-one {
+    margin-top: 20px;
+    max-width: 80%;
+}
+
+.short-bio {
+    line-height: 15px;
+    text-align: justify;
+    display: block;
+
+}
+
+label.sponsor-logo {
+    font-size: 11.5px;
+    color: #797979;
+}
+hr {
+    width: 210px;
+    margin-top: 0px;
+    border-color: #535353;
+}
+
+div.endorse-logo {
+    border-left:1px solid #3b3b3b;
+    max-height: 80%;
+}
+
+.endorse {
+    margin-top: 30px;
+}

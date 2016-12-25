@@ -1,3 +1,63 @@
-<div align="center">
-    This is a brief description about this page.
+<div class="row" align="center">
+    <div classs="row">
+        <div class="col-bg-8 about-cover" align="center">
+            <img src="/static/images/about-cover.jpg">
+        </div>
+    </div>
+    <div class="row row-one">
+        <div class="col-md-8 short-bio" align="center">
+            <p ng-repeat="para in $ctrl.shortBio">{{para}}</p>
+        </div>
+        <div class="col-sm-4" align="right">
+            <img src="/static/images/about-image-1.jpg">
+        </div>
+    </div>
+    <div class="row" align="center" style="font-size: large">Awards and Recognitions</div>
+    <hr>
+    <div class="row row-one">
+        <div class="col-sm-4" align="right">
+            <img src="/static/images/about-image-2.jpg">
+        </div>
+        <div class="col-md-8 short-bio" align="left">
+            <ul ng-repeat="award in $ctrl.awards">
+                <li>{{award}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row endorse" align="center" style="font-size: large">Endorsements</div>
+    <hr>
+    <div class="row" align="center" style="margin-left:11%">
+        <div class="col-sm-2">
+            <img src="/static/images/laney-logo.jpg" style="max-height: 80%; max-width: 80%">
+        </div>
+        <div class="col-sm-2 endorse-logo" align="center">
+            <img src="/static/images/bose-logo.jpg" style="max-height: 110%; max-width: 110%">
+        </div>
+        <div class="col-sm-2 endorse-logo">
+            <img src="/static/images/blade-logo.jpg" style="max-height: 100%; max-width: 80%">
+        </div>
+        <div class="col-sm-2 endorse-logo">
+            <img src="/static/images/daddario-logo.jpg" style="max-height: 100%; max-width: 100%">
+        </div>
+        <div class="col-sm-2 endorse-logo">
+            <img src="/static/images/digitech-logo.jpg" style="max-height: 110%; max-width: 100%">
+        </div>
+    </div>
+    <div class="row" align="center" style="margin-left:11%">
+        <div class="col-sm-2">
+            <label class="sponsor-logo">Laney Amplification, UK</label>
+        </div>
+        <div class="col-sm-2">
+            <label class="sponsor-logo">Bose Corporation, US</label>
+        </div>
+        <div class="col-sm-2">
+            <label class="sponsor-logo">Blade Guitars, Switzerland</label>
+        </div>
+        <div class="col-sm-2">
+            <label class="sponsor-logo">D'Addario & Planet Waves, US</label>
+        </div>
+        <div class="col-sm-2">
+            <label class="sponsor-logo">DigiTech Guitar Effects, US</label>
+        </div>
+    </div>
 </div>

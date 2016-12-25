@@ -220,17 +220,25 @@ label.latest-videos {
 }
 
 .row-one {
-    margin-top: 20px;
+    margin-top: 32px;
     max-width: 80%;
 }
 
 .short-bio {
-    line-height: 15px;
+    color: #7f7f7f;
+    text-indent: 30px;
+    line-height: 24px;
+    text-align: justify;
+    display: block;
+}
+
+.award-list {
+    color: #7f7f7f;
+    line-height: 24px;
     text-align: justify;
     display: block;
 
 }
-
 label.sponsor-logo {
     font-size: 11.5px;
     color: #797979;
@@ -247,5 +255,16 @@ div.endorse-logo {
 }
 
 .endorse {
+    margin-top: 30px;
+}
+.about {
+    margin-top: 32px;
+}
+p.quote-para {
+    max-width: 66%;
+    margin-top: 10px;
+    font-size: 16px;
+}
+div.quote {
     margin-top: 30px;
 }

@@ -10,7 +10,7 @@
                                  "After relocating to his hometown in Vypin in the 90's, he started playing in a band called Instinct, followed by short stints with the bands Wrenz and Aatma. During one of the practice sessions of the band Aatma, he met John of Motherjane, who then invited him to audition for the lead guitarist position in the band.",
                                  "He has cited his influences as Jimi Hendrix, Jimmy Page, Jeff Beck, Steve Vai, Joe Satriani, Reb Beach and Brian May.",
                                  "Baiju is also a big fan of Illayaraja and loves the compositions of other Indian composers like Raveendran, Devarajan, Naushad and R.D. Burman. His father had a vast collection of ghazals by Mehdi Hassan, Anup Jalota, and Pankaj Udhas and he grew up listening to Malayalam, Tamil and Hindi film music.",
-                                 "His favourite guitarists include Jimi Hendrix, dJimmy Page, Steve Vai, Mattias Ekhlund and Guthrie Govan."
+                                 "His favourite guitarists include Jimi Hendrix, Jimmy Page, Steve Vai, Mattias Ekhlund and Guthrie Govan."
                 ];
                 this.awards = ["Awarded – Prathibha Puraskaram (2014) - State of Kerala",
                                "Winner – Best Indian Lead Guitarist (2014) – Jack Daniel’s Rock Awards",

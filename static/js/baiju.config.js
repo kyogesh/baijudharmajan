@@ -19,12 +19,12 @@
             otherwise('/home');
         }
     ]).
-    run(['$rootScope', '$window', '$httpProvider', function ($rootScope, $window, $httpProvider) {
+    run(['$rootScope', '$window', '$http', function ($rootScope, $window, $http) {
         $rootScope.$on('$routeChangeStart', function (event) {
             // Create a list of routes which should be accessible without login
             // $window.location.href = "/#!/home";
-            $httpProvider.defaults.xsrfCookieName = 'csrftoken';
-            $httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
+            $http.defaults.headers.common.xsrfCookieName = 'csrftoken';
+            $http.defaults.headers.common.xsrfHeaderName = 'X-CSRFToken';
         });
     }]);
 }());

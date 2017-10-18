@@ -1,0 +1,17 @@
+<div class="row" align="center">
+    <!--<div clas="column" ng-repeat="item in $ctrl.gallery_items">-->
+        <!--{{item.link}}-->
+        <!--<img src="{{item.link}}">-->
+    <!--</div>-->
+        <ul id="rig" ng-repeat="photo in $ctrl.photos">
+            <div class="col-md-4" style="margin-top: 40px;">
+                <li class="galleryItem" style="width: 100%; height: 100%;">
+                    <a class="rig-cell" href="#!/gallery">
+                        <img class="rig-img" id="myImg" src="{{photo.src}}">
+                        <span class="rig-overlay"></span>
+                        <span class="rig-text">{{photo.desc}}</span>
+                    </a>
+                </li>
+            </div>
+        </ul>
+</div>

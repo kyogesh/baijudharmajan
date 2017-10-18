@@ -16,6 +16,9 @@
             when('/about', {
                 template: '<about></about>'
             }).
+            when('/gallery', {
+                template: '<gallery></gallery>'
+            }).
             otherwise('/home');
         }
     ]).

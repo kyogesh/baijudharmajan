@@ -14,7 +14,7 @@
             <input name="phone" maxlength="15" ng-model="$ctrl.phone" required="true" class="tel-number-field form-control">
         </label>
         <label for="subject" ><span>Regarding</span>
-            <select class="custom-select custom-select-sm" ng-model="$ctrl.regarding" ng-options="key for (key, value) in $ctrl.regardingOptions" ng-change="$ctrl.setRegarding()">
+            <select class="custom-select custom-select-sm" ng-model="$ctrl.regarding" ng-options="key for (key, value) in $ctrl.regardingOptions">
             </select>
         </label>
         <label><span>Message &nbsp; <span class="required">*</span></span>

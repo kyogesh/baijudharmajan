@@ -4,7 +4,17 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from .models import Link, ContactFormDetail
+from .models import Link, ContactFormDetail, Gallery
+from .serializers import GallerySerializer
+
+
+def index(request):
+    context = {'links': Link.objects.all()}
+    return render(request, 'web/index.html', context)
+
+
+def home(request):
+    return render(request, 'index.html')
 
 
 class GetLinks(APIView):
@@ -40,10 +50,12 @@ class ContactView(APIView):
         return Response({'success': True})
 
 
-def index(request):
-    context = {'links': Link.objects.all()}
-    return render(request, 'web/index.html', context)
+class GalleryAPIView(APIView):
 
-
-def home(request):
-    return render(request, 'index.html')
+    def get(self, request):
+        galleries = Gallery.objects.all()
+        serializer = GallerySerializer(galleries, many=True)
+        data = []
+        for each in serializer.data:
+            data.append(dict(src=each['image'], desc=each['description']))
+        return Response(data)

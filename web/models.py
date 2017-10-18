@@ -23,3 +23,13 @@ class ContactFormDetail(models.Model):
 
     def __unicode__(self):
         return '[{0}] {1} {2} {3}'.format(self.regarding, self.date.ctime(), self.email, self.message)
+
+
+class Gallery(models.Model):
+
+    image = models.ImageField(upload_to='static/images/gallery/')
+    description = models.CharField(max_length=255)
+
+    class Meta:
+        verbose_name = 'Gallery'
+        verbose_name_plural = 'Galleries'

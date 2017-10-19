@@ -27,7 +27,7 @@ class ContactFormDetail(models.Model):
 
 class Gallery(models.Model):
 
-    image = models.ImageField(upload_to='static/gallery/')
+    image = models.ImageField(upload_to='gallery/')
     description = models.CharField(max_length=255)
 
     class Meta:

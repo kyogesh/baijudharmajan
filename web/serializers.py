@@ -4,7 +4,12 @@ from .models import Gallery
 
 
 class GallerySerializer(serializers.ModelSerializer):
+    image_path = serializers.SerializerMethodField()
 
     class Meta:
         model = Gallery
-        fields = '__all__'
+        fields = ('image_path', 'description', )
+
+    def get_image_path(self, obj):
+        return '/'.join(obj.image.path.split('/')[-3:])
+

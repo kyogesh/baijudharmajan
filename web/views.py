@@ -57,5 +57,5 @@ class GalleryAPIView(APIView):
         serializer = GallerySerializer(galleries, many=True)
         data = []
         for each in serializer.data:
-            data.append(dict(src=each['image'], desc=each['description']))
+            data.append(dict(src=each['image_path'], desc=each['description']))
         return Response(data)

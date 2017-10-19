@@ -11,5 +11,5 @@ class GallerySerializer(serializers.ModelSerializer):
         fields = ('image_path', 'description', )
 
     def get_image_path(self, obj):
-        return '/'.join(obj.image.path.split('/')[-3:])
+        return '/'.join(obj.image.path.split('/')[-2:])
 

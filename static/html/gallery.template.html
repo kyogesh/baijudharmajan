@@ -4,14 +4,25 @@
         <!--<img src="{{item.link}}">-->
     <!--</div>-->
         <ul id="rig" ng-repeat="photo in $ctrl.photos">
-            <div class="col-md-4" style="margin-top: 40px;">
+            <div class="col-md-4" style="margin-top: 40px;" ng-click="$ctrl.img_click()">
                 <li class="galleryItem" style="width: 100%; height: 100%;">
                     <a class="rig-cell" href="#!/gallery">
-                        <img class="rig-img" id="myImg" src="{{photo.src}}">
+                        <img class="rig-img" id="myImg" src="http://localhost:8000/static/images/about-cover.jpg">
                         <span class="rig-overlay"></span>
                         <span class="rig-text">{{photo.desc}}</span>
                     </a>
                 </li>
             </div>
         </ul>
+        <div id="myModal" class="modal"  ng-click="$ctrl.other_click()">
+
+          <!-- The Close Button -->
+          <span class="close">x</span>
+
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content" id="img01">
+
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption"></div>
+        </div>
 </div>

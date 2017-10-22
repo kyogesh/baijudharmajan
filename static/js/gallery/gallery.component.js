@@ -27,7 +27,7 @@
                 this.span = document.querySelector(".close")[0];
 
                 // When the user clicks on <span> (x), close the this.modal
-                this.other_click = function() {
+                this.close_modal = function() {
                   self.modal.attr('style', 'display : none');
                 };
 

@@ -73,7 +73,6 @@ def deploy_to_prod(collect=''):
             install_requirements()
             apply_migrations()
             collect_static()
-            kill_running_supervisord()
             kill_running_gunicorn_process()
             restart_nginx()
             time.sleep(10)
